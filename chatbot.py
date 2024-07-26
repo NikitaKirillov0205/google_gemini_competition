@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Textbot")
+st.title("VIRALIST AI")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
