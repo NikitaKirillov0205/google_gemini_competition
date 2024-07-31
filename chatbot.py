@@ -1,7 +1,10 @@
 import streamlit as st
+import google.generativeai as genai
 from dotenv import load_dotenv
 
 load_dotenv()
+genai.configure(api_key='-')
+model = genai.GenerativeModel(model_name="gemini-1.5-flash")
 
 hide_img_fs = '''
 <style>
